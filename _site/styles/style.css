@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: #313231;
+    color:black;
+}
+h1{
+    text-align: center;
+    color: #25b99a;
+}
+header{
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    position: fixed;
+    top: 10%;
+    z-index: 5;
+    background:#25b99a;
+    border-radius: 10px;     
+}
+header input{
+    width: 100%;
+    height: 50px;
+    float: left;
+    background: white;
+    text-indent: 18px;
+    padding: 0 60px 0 0;
+    color:rgb(40, 41, 40);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+}
+header button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 25px;
+    z-index: 2;
+    background: rgb(40, 41, 40);
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance:none;
+    appearance: none;
+}
+header button svg{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+
+}
+header button svg .fill{
+    fill:#25b99a;
+}
+.container{
+    margin: 130px 0 0 0;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    background: #25b99a;
+    border-radius: 10px;
+    
+}
+ div.container ul.todo li{
+     position: relative;
+     width: 100%;
+     height: 50px;
+     font-size: 20px;
+     background: whitesmoke;
+     border-radius: 10px;
+     margin: 0 0 10px 0;
+     padding: 0 100px 0 0;
+ }
+ div.container ul.todo li:last-of-type{
+     margin: 0;
+ }
+ div.container ul.todo li .buttons{
+     width:100px;
+     height: 50px;
+     position: absolute;
+     top: 0;
+     right: 0;
+
+ }
+ div.container ul.todo li .buttons button{
+     width: 50px;
+     height: 50px;
+     float: left;
+     background: none;
+     border: 0px;
+     box-shadow: none;
+     outline: none;
+     position: relative;
+
+     -webkit-appearance: none; 
+     -moz-appearance: none;
+     -ms-appearance: none;
+     -o-appearance:none;
+     appearance: none;
+ }
+/*div.container ul.todo li .buttons button:last-of-type{
+     content: '';
+     width: 2px;
+     height: 30px;
+     position: absolute;
+     top: 10px;
+     left:0;
+     background: #53c7ee;
+
+ }
+ */
+ div.container ul.todo li .buttons button svg{
+     width: 22px;
+     height: 22px;
+     position: absolute;
+     top: 50%;
+     left:50%;
+     margin: -11px 0 0 -11px;
+     cursor: pointer;
+ }
+ div.container ul.todo li .buttons button img{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -11px 0 0 -11px;
+    cursor: pointer;
+
+ }
+ div.container ul.todo li .buttons button svg:hover{
+     fill: red;
+ }
+ ul.todo#completed:not(:empty){
+     position: relative;
+     padding: 60px 0 0 0;
+     
+ }
+ ul.todo#completed:not(:empty):before{
+     content: '';
+     width: 150px;
+     height: 2px;
+     background: #202020;
+     position: absolute;
+     top: 30px;
+     left:50%;
+     margin: 0 0 0 -75px;
+
+ }
